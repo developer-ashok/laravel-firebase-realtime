@@ -24,6 +24,8 @@ class FirebaseController extends Controller
 	public function setNodes(){	
 		$database = $this->getDbRef();
 
+		$reference = $database->getReference('products');
+		
 		// add nodes initial
 		$reference = $reference->set([
 			'sku-1' => [
