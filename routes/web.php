@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 Route::get('/firebase','FirebaseController@index')->name('firebase_index');
-Route::get('/firebase','FirebaseController@setNodes')->name('firebase_set_nodes');
-Route::get('/firebase','FirebaseController@pushNode')->name('firebase_push_node');
-Route::get('/firebase','FirebaseController@updateNodeValue')->name('firebase_update_node_value');
-Route::get('/firebase','FirebaseController@removeNode')->name('firebase_remove_node');
+Route::get('/firebase_set_nodes','FirebaseController@setNodes')->name('firebase_set_nodes');
+Route::get('/firebase_push_node','FirebaseController@pushNode')->name('firebase_push_node');
+Route::get('/firebase_update_node_value','FirebaseController@updateNodeValue')->name('firebase_update_node_value');
+Route::get('/firebase_remove_node','FirebaseController@removeNode')->name('firebase_remove_node');
